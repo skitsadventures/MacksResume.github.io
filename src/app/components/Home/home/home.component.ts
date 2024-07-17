@@ -1,13 +1,12 @@
-import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  dialogVisible: boolean = false;
+  dialogVisible = false;
 
   openDialog(): void {
     this.dialogVisible = true;

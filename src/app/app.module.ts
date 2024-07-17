@@ -1,3 +1,5 @@
+// src/app/app.module.ts
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -8,7 +10,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/Home/home/home.component';
 import { AboutComponent } from './components/About/about/about.component';
 import { ResumeComponent } from './components/Resume/resume/resume.component';
-// import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,6 @@ import { ResumeComponent } from './components/Resume/resume/resume.component';
     HomeComponent,
     AboutComponent,
     ResumeComponent,
-    // DialogExampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +28,6 @@ import { ResumeComponent } from './components/Resume/resume/resume.component';
   providers: [
     // Add services if needed
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // Only AppComponent should be in the bootstrap array
 })
 export class AppModule { }
