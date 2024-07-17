@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
+import { bootstrapApplication } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,9 @@ import { ResumeComponent } from './components/Resume/resume/resume.component';
   providers: [
     // Add services if needed
   ],
-  bootstrap: [AppComponent] // Only AppComponent should be in the bootstrap array
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    bootstrapApplication(AppComponent);
+  }
+}
