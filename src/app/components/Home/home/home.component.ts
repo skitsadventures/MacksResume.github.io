@@ -1,10 +1,8 @@
-import { Component, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
