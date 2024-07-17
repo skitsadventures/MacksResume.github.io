@@ -12,10 +12,10 @@ import { ResumeComponent } from './components/Resume/resume/resume.component';
 
 @NgModule({
   declarations: [
-    // AppComponent,
-    // HomeComponent,
-    // AboutComponent,
-    // ResumeComponent,
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ResumeComponent,
     // DialogExampleComponent,
   ],
   imports: [
@@ -28,6 +28,6 @@ import { ResumeComponent } from './components/Resume/resume/resume.component';
   providers: [
     // Add services if needed
   ],
-  // bootstrap: [AppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
